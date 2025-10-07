@@ -5,6 +5,8 @@
   "framework": null,
   "env": {
     "NODE_ENV": "production",
-    "NODE_VERSION": "20"
+    "NODE_VERSION": "20",
+  "buildCommand": "chmod +x node_modules/.bin/vite && npm run build",
+  "outputDirectory": "dist"
   }
 }
