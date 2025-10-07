@@ -4,11 +4,12 @@
   "version": "0.0.0",
   "type": "module",
 "scripts": {
+  "preinstall": "rm -rf node_modules package-lock.json",
   "dev": "vite",
   "build": "vite build",
   "preview": "vite preview",
   "start": "vite --port $PORT",
-  "postinstall": "rm -rf node_modules/.vite && npm rebuild rollup"
+  "postinstall": "npm rebuild rollup"
 },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -81,6 +82,8 @@
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0"
+    "typescript-eslint": "^8.38.0",
+    "rollup": "4.22.4",
+    "@rollup/rollup-linux-x64-gnu": "4.22.4"
   }
 }
