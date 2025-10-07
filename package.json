@@ -6,8 +6,9 @@
 "scripts": {
   "preinstall": "rm -rf node_modules package-lock.json",
   "dev": "vite",
-  "build": "vite build",
+  "build": "npx vite build",
   "preview": "vite preview",
+  "prepare": "npm install vite --save-dev",
   "start": "vite --port $PORT",
   "postinstall": "npm rebuild rollup"
 },
